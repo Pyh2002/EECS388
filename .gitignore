@@ -52,11 +52,3 @@
 .vscode/
 __MACOSX/
 __pycache__/
-
-# Specific directories to ignore
-Trial*/
-*_contours/
-*_endpoints/
-*_frames/
-*_overlayed_images/
-*_skeletonized_masks/
