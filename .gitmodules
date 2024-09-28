@@ -6,7 +6,7 @@
 	url = git@github.com:Pyh2002/EECS388-P1.git
 [submodule "Lab/EECS388-Lab2"]
 	path = Lab/EECS388-Lab2
-	url = github.com/Pyh2002/EECS388-Lab2.git
+	url = git@github.com/Pyh2002/EECS388-Lab2.git
 [submodule "EECS388-P2"]
 	path = EECS388-P2
 	url = git@github.com:Pyh2002/EECS388-P2.git
