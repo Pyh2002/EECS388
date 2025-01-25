@@ -19,3 +19,6 @@
 [submodule "EECS388-P3"]
 	path = EECS388-P3
 	url = git@github.com:Pyh2002/EECS388-P3.git
+[submodule "EECS388-P4"]
+	path = EECS388-P4
+	url = git@github.com:Pyh2002/EECS388-P4.git
